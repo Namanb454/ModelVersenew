@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center w-full">
                         <img src='ModelVerse.png' />
-                        <div className="flex-shrink-0 text-[#072C81] text-xl font-semibold">ModelVerse</div>
+                        <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-semibold">ModelVerse</a>
                         <div className="hidden md:block w-full">
                             {/* Add your navigation links here */}
                             <nav class="w-fit mx-auto items-center text-base justify-center">
@@ -72,11 +72,8 @@ const Navbar = () => {
 
             <div className="md:hidden">
                 {/* Add your mobile navigation links here */}
-                <div className="px-2 pt-4 pb-3 space-y-1 sm:px-3">
-                    <div className="flex-shrink-0">
-                        {/* <img className="h-8 w-8" src="/logo.svg" alt="Logo" /> */}
-                        {/* <Link to='/' className='lg:text-2xl text-[#6527BE] text-xl font-bold '>B&K Solutions</Link> */}
-                    </div>
+                {/* <div className="px-2 pt-4 pb-3 space-y-1 sm:px-3">
+                    
 
 
 
@@ -100,7 +97,7 @@ const Navbar = () => {
                     </button>
                     <a />
 
-                </div>
+                </div> */}
             </div>
 
         </nav >

@@ -1,7 +1,26 @@
 import React from 'react'
+import { HowItWorks } from '../content/HowItWorks'
 // import { MdDoneAll } from 'react-icons/md';
 
 function Main() {
+    const icons = [
+        {
+            "icon": "uploadicon.png",
+            "position": "First:",
+            "desc": "Upload Raw Images"
+        },
+        {
+            "icon": "starsicon.png",
+            "position": "Second:",
+            "desc": "Our AI starts it’s work"
+        },
+        {
+            "icon": "ellipseicon.png",
+            "position": "Third:",
+            "desc": "Download your models"
+        }
+
+    ]
     const images1 = [
         { "img": "models/img1.png" },
         { "img": "models/img2.png" },
@@ -18,7 +37,9 @@ function Main() {
         { "img": "models/img9.png" },
         { "img": "models/img10.png" },
         { "img": "models/img11.png" },
+        { "img": "models/img23.png" },
         { "img": "models/img12.png" },
+        { "img": "models/img22.png" },
         { "img": "models/img13.png" },
         { "img": "models/img14.png" },
         { "img": "models/img15.png" },
@@ -27,6 +48,7 @@ function Main() {
         { "img": "models/img18.png" },
         { "img": "models/img19.png" },
         { "img": "models/img20.png" },
+        { "img": "models/img21.png" },
     ]
     return (
         <div>
@@ -36,57 +58,44 @@ function Main() {
                     <img className='opacity-50' src='bg1.png' />
                 </div>
 
-                <section class="absolute top-32 text-gray-600 w-full body-font">
-                    <div class="container px-5 py-24">
+                <section class="absolute lg:top-32 top-12 text-gray-600 w-full body-font">
+                    <div class="container lg:px-5 lg:py-24 py-10">
                         <div class="flex flex-col text-center w-full mb-10">
-                            <h1 class="w-[60%] mx-auto sm:text-4xl text-2xl font-semibold title-font mb-2 text-[#072C81]">Professional Model Catalogs, </h1>
-                            <span className='w-[70%] mx-auto sm:text-4xl text-2xl font-semibold title-font text-[#072C81]'>without physical studio photoshoot</span>
-                            <p class="lg:w-2/3 mx-auto leading-relaxed my-5 font-semibold text-black text-lg">No.1 Professional AI Model Catalog Generator</p>
-                            <p class="lg:w-[40%] mx-auto leading-relaxed text-base">Get on-model images of your garments in minutes with our AI-</p>
-                            <p class="lg:w-[45%] mx-auto leading-relaxed text-base">photographer. Upload photos, pick style & receive 100+ On-Model Images</p>
+                            <h1 class="lg:w-[60%] mx-auto lg:text-4xl text-xl font-semibold title-font mb-2 text-[#072C81]">Professional Model Catalogs, </h1>
+                            <span className='lg:w-[70%] mx-auto lg:text-4xl text-xl font-semibold title-font text-[#072C81]'>without physical studio photoshoot</span>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed my-5 font-semibold text-black lg:text-lg text-sm">No.1 Professional AI Model Catalog Generator</p>
+                            <p class="lg:w-[40%] mx-auto leading-relaxed text-xs">Get on-model images of your garments in minutes with our AI-</p>
+                            <p class="lg:w-[45%] mx-auto leading-relaxed text-xs">photographer. Upload photos, pick style & receive 100+ On-Model Images</p>
                         </div>
 
                         <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
                             <div className='mx-auto'>
-                                <button class="text-white bg-[#F33737] border-[1px] border-[#F33737] py-2 mx-8 px-8 focus:outline-none hover:bg-white hover:text-[#F33737] hover:border-[#F33737]  rounded text-lg">Get Your Models</button>
-                                <button class="text-black bg-white py-2 mx-8 px-8 border-[1px] border-black focus:outline-none hover:bg-black hover:text-white rounded text-lg">Register as team</button>
+                                <button class="text-white bg-[#F33737] border-[1px] border-[#F33737] lg:py-2 py-1 lg:mx-8 mx-2 lg:px-8 px-4 focus:outline-none hover:bg-white hover:text-[#F33737] hover:border-[#F33737]  rounded text-xs">Get Your Models</button>
+                                <button class="text-black bg-white lg:py-2 py-1 lg:mx-8 mx-2 lg:px-8 px-4 border-[1px] border-black focus:outline-none hover:bg-black hover:text-white rounded text-xs">Register as team</button>
                             </div>
                         </div>
                         <div className='flex my-10'>
-                            <p class="flex items-center lg:w-fit mx-auto leading-relaxed text-black text-xl"><span className='font-semibold'>1835+</span> AI models already created
+                            <p class="flex items-center lg:w-fit mx-auto leading-relaxed text-black text-base"><span className='font-semibold'>1835+</span> AI models already created
                                 <img className='h-5' src='stars.png' alt='images' />
                             </p>
                         </div>
 
-                        <div class="container w-[80%] px-5 py-5 mx-auto bg-[#F8F7F7] border-[1px] border-black rounded-md shadow-sm shadow-black">
-                            <div class="flex flex-wrap sm:-m-4 mx-auto -mb-10 -mt-4 md:space-y-0 space-y-6">
-                                <div class="p-4 md:w-1/4 flex items-center mx-auto">
-                                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                        <img src='uploadicon.png' />
-                                    </div>
-                                    <div class="flex-grow text-start">
-                                        <h2 class="text-gray-900 text-lg title-font font-semibold">First:</h2>
-                                        <p class="leading-relaxed text-base">Upload Raw Images</p>
-                                    </div>
-                                </div>
-                                <div class="p-4 md:w-1/4 flex items-center mx-auto">
-                                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                        <img src='starsicon.png' />
-                                    </div>
-                                    <div class="flex-grow text-start">
-                                        <h2 class="text-gray-900 text-lg title-font font-semibold">Second:</h2>
-                                        <p class="leading-relaxed text-base">Our AI starts it's work</p>
-                                    </div>
-                                </div>
-                                <div class="p-4 md:w-1/4 flex items-center mx-auto">
-                                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                        <img src='ellipseicon.png' />
-                                    </div>
-                                    <div class="flex-grow text-start">
-                                        <h2 class="text-gray-900 text-lg title-font font-semibold">Third:</h2>
-                                        <p class="leading-relaxed text-base">Download your models</p>
-                                    </div>
-                                </div>
+                        <div class="container lg:w-[80%] px-5 py-5 mx-auto bg-[#F8F7F7] border-[1px] border-black rounded-md shadow-sm shadow-black">
+                            <div class="lg:flex lg:flex-wrap sm:-m-4 mx-auto md:space-y-0 space-y-6">
+
+                                {icons.map((data) => {
+                                    return (
+                                        <div class="lg:p-4 lg:w-1/4 lg:flex items-center lg:mx-auto mx-3">
+                                            <div class="lg:w-12 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                <img src={data.icon} />
+                                            </div>
+                                            <div class="flex-grow lg:text-start">
+                                                <h2 class="text-gray-900 lg:text-lg text-sm title-font font-semibold">{data.position}</h2>
+                                                <p class="leading-relaxed lg:text-base text-xs">{data.desc}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
@@ -99,10 +108,10 @@ function Main() {
             </div>
 
 
-            <section class="text-gray-600 body-font">
+            <section class="text-gray-600 body-font lg:my-0 mt-[70%]">
                 <div class="container py-10 mx-auto">
 
-                    <div class="flex flex-wrap bg-[#C3CFED] py-20">
+                    <div class="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[100%]">
 
                         <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                             <h2 class="text-lg sm:text-xl mx-4 text-gray-900 text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
@@ -177,10 +186,11 @@ function Main() {
                 </div>
             </section>
 
-
-            <section class="text-gray-600 body-font my-10">
+            {/* 11,112 AI Models already generated */}
+            {/* for 66+ happy customers! */}
+            <section class="text-gray-600 body-font mt-10">
                 <div class="container px-5 mx-auto">
-                    <div class="flex flex-col text-center w-full mb-12">
+                    <div class="flex flex-col text-center w-full mb-0">
                         <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">See what their results look like below</p>
                     </div>
@@ -188,7 +198,11 @@ function Main() {
             </section>
 
             <section class="text-gray-600 body-font flex">
-                <div class="container px-5 py-10 mx-auto">
+                <div class="container px-5 py- mx-auto">
+                    <div className='my- flex items-center'>
+                        <img className='w-[5%]' src='models/img1_1.png' />
+                        <img className='h-[5vh]' src='models/forwardarrow.png' />
+                    </div>
                     <div class="flex flex-wrap -m-4 mx-2">
                         {images1.map((data) => {
                             return (
@@ -201,7 +215,11 @@ function Main() {
                         })}
                     </div>
                 </div>
-                <div class="container px-5 py-10 mx-auto">
+                <div class="container px-5 py- mx-auto">
+                    <div className='my- flex'>
+                        <img className='ml-auto h-[5vh]' src='models/backwardarrow.png' />
+                        <img className='w-[5%]' src='models/img4_1.png' />
+                    </div>
                     <div class="flex flex-wrap -m-4 mx-2">
                         {images2.map((data) => {
                             return (
@@ -221,7 +239,7 @@ function Main() {
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">None of the images are real. All of them are the creation of Model Verse</p>
             </div>
 
-            <div className="marquee">
+            {/* <div className="marquee">
                 <div className="maylike-products-container track">
                     {imagecarousel.map((item) => (
                         <div>
@@ -229,7 +247,210 @@ function Main() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        {imagecarousel.map((item) => (
+                            <div class="lg:w-[11%] md:w-1/2 p-4 w-full mx-auto">
+                                <div class="block relative lg:h-[30vh] rounded overflow-hidden">
+                                    <img alt="models" class="object-center lg:w-[30vw] w-full lg:h-[25vh] block" src={item.img} />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* How it works? */}
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+
+                    <div class="flex flex-wrap mx-10">
+                        <h2 class="text-3xl font-semibold text-left title-font text-[#21B8B9] tracking-widest">How it works?</h2>
+                        <h1 class="text-[#18347B] text-4xl text-left title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
+
+                        {HowItWorks.map((data) => {
+                            return (
+                                <div class="lg:w-full w-full lg:py-6 mb-6 lg:mb-0">
+                                    <div className='flex mx-auto'>
+                                        <div className='lg:w-[65%] mx-5'>
+                                            <h2 className='text-black text-3xl text-left title-font font-semibold mb-4'>{data.heading}</h2>
+                                            <p class="leading-relaxed mb-4 text-xl text-justify">{data.desc}</p>
+                                        </div>
+                                        <div className='flex ml-auto'>
+                                            <img alt="ecommerce" class="lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded" src={data.img1} />
+                                            <img alt="ecommerce" class="lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded" src={data.img2} />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* Pricing */}
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full mb-20">
+                        <h2 class="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Pricing</h2>
+                        <h1 class="lg:w-[70%] mx-auto sm:text-5xl text-3xl font-bold title-font mb-5 text-[#3F3503]">
+                            Model Catalog Photo Shoot for 50x cheaper than Physical shoot</h1>
+                        <p class="lg:w-[50%] mx-auto leading-relaxed text-base text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
+
+                    </div>
+                    <div class="flex flex-wrap -m-4">
+
+                        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                                {/* <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2> */}
+                                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                    <span>$19</span>
+                                    <span class="text-lg ml-1 font-normal text-gray-500">/shoot</span>
+                                </h1>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Vexillologist pitchfork
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Tumeric plaid portland
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-6">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Mixtape chillwave tumeric
+                                </p>
+                                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                                {/* <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2> */}
+                                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                    <span>$29</span>
+                                    <span class="text-lg ml-1 font-normal text-gray-500">/shoot</span>
+                                </h1>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Vexillologist pitchfork
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Tumeric plaid portland
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Hexagon neutra unicorn
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Vexillologist pitchfork
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-6">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Mixtape chillwave tumeric
+                                </p>
+                                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
+                                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                    <span>$72</span>
+                                    <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                </h1>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Vexillologist pitchfork
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Tumeric plaid portland
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Hexagon neutra unicorn
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Vexillologist pitchfork
+                                </p>
+                                <p class="flex items-center text-gray-600 mb-6">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Mixtape chillwave tumeric
+                                </p>
+                                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
 
 
         </div>

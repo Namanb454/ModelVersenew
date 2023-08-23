@@ -28,3 +28,21 @@ exports.HowItWorks = [
         "desc": "You can browse through the images and select your favorites. You can download the selected images in high resolution and use them on your e-commerce website, marketplaces, or other marketing materials."
     }
 ]
+
+exports.pricing = [
+    {
+        'id': 1,
+        'price': '$ 19',
+        'images': '50',
+    },
+    {
+        'id': 2,
+        'price': '$ 29',
+        'images': '110',
+    },
+    {
+        'id': 3,
+        'price': '$ 49',
+        'images': '250',
+    }
+]

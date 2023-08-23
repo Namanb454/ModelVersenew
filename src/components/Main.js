@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdArrowForward } from 'react-icons/md';
-import { HowItWorks } from '../content/HowItWorks'
-import { pricing } from '../content/Pricing'
+import { HowItWorks } from '../content/Main'
+import { pricing } from '../content/Main'
 // import { MdDoneAll } from 'react-icons/md';
 
 function Main() {
@@ -299,7 +299,7 @@ function Main() {
 
 
             {/* Pricing */}
-            <section class="text-gray-600 body-font overflow-hidden">
+            <section class="bg-gray-100 body-font overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full">
                         <h2 class="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Pricing</h2>
@@ -308,9 +308,9 @@ function Main() {
                         <p class="lg:w-[50%] mx-auto leading-relaxed text-base text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
 
                     </div>
-                    <div className='flex items-center'>
-                        <img className='h-[10vh]' src='models/forwardarrow.png' alt='images'/>
-                        <img className='h-[10vh] ml-auto' src='models/backwardarrow.png' alt='images'/>
+                    <div className='flex items-center mb-10'>
+                        <img className='h-[10vh]' src='models/forwardarrow.png' alt='images' />
+                        <img className='h-[10vh] ml-auto' src='models/backwardarrow.png' alt='images' />
                     </div>
                     <div class="flex flex-wrap -m-4">
 

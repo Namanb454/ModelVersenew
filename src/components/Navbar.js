@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center w-full">
                         <img src='ModelVerse.png' />
-                        <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-semibold">ModelVerse</a>
+                        <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-bold">ModelVerse</a>
                         <div className="hidden md:block w-full">
                             {/* Add your navigation links here */}
                             <nav class="w-fit mx-auto items-center text-base justify-center">

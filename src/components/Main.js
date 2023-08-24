@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdArrowForward } from 'react-icons/md';
+import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
+import { RxCross2 } from 'react-icons/rx';
 import { HowItWorks } from '../content/Main'
 import { pricing } from '../content/Main'
+import { location } from '../content/Main'
+import { questions } from '../content/Main'
 // import { MdDoneAll } from 'react-icons/md';
 
 function Main() {
+
+    const [visible, setVisible] = React.useState(false)
+    const [visible1, setVisible1] = React.useState(false)
+
     const icons = [
         {
             "icon": "uploadicon.png",
@@ -241,16 +249,6 @@ function Main() {
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">None of the images are real. All of them are the creation of Model Verse</p>
             </div>
 
-            {/* <div className="marquee">
-                <div className="maylike-products-container track">
-                    {imagecarousel.map((item) => (
-                        <div>
-                            <img src={item.img} />
-                        </div>
-                    ))}
-                </div>
-            </div> */}
-
             <section class="text-gray-600 body-font">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap -m-4">
@@ -268,29 +266,46 @@ function Main() {
 
 
             {/* How it works? */}
-            <section class="text-gray-600 body-font overflow-hidden">
+            <section class="text-gray-600 body-font bg-[#efeded] overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
 
                     <div class="flex flex-wrap mx-10">
-                        <h2 class="text-3xl font-semibold text-left title-font text-[#21B8B9] tracking-widest">How it works?</h2>
-                        <h1 class="text-[#18347B] text-4xl text-left title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
+                        <h2 class="text-3xl font-semibold text-left my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
+                        <h1 class="text-[#18347B] text-4xl text-left my-5 title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
 
-                        {HowItWorks.map((data) => {
-                            return (
-                                <div class="lg:w-full w-full lg:py-6 mb-6 lg:mb-0">
-                                    <div className='flex mx-auto'>
-                                        <div className='lg:w-[65%] mx-5'>
-                                            <h2 className='text-black text-3xl text-left title-font font-semibold mb-4'>{data.heading}</h2>
-                                            <p class="leading-relaxed mb-4 text-xl text-justify">{data.desc}</p>
-                                        </div>
-                                        <div className='flex ml-auto'>
-                                            <img alt="ecommerce" class="lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded" src={data.img1} />
-                                            <img alt="ecommerce" class="lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded" src={data.img2} />
+                        <div className='my-5'>
+                            {HowItWorks.map((data) => {
+                                return (
+                                    <div class="lg:w-full w-full lg:py- mb-6 lg:mb-0">
+                                        <div className='flex mx-auto'>
+                                            <div className={`lg:w-[65%] ${visible1 ? 'heading-visible1' : 'heading-hidden'}`}>
+                                                <div className='px-5 flex'>
+
+                                                    <h2 className='text-black text-3xl text-left title-font font-semibold mb-4'>{data.heading}</h2>
+                                                    <button className='ml-auto' onClick={() => setVisible1(!visible1)}>
+                                                        {visible1 ? <RxCross2 /> : <AiOutlinePlus />}
+                                                    </button>
+                                                </div>
+                                                <style>{`
+
+            .element-visible1 { display: block }
+            .element-hidden { display: none }
+
+            .heading-visible1 {width: 65%}
+            .heading-hidden {width: 59vw}
+
+      `}</style>
+                                                <p class={`w-[90%] leading-relaxed mb-4 px-5 text-xl text-justify ${visible1 ? 'element-visible1' : 'element-hidden'}`}>{data.desc}</p>
+                                            </div>
+                                            <div className='flex ml-auto'>
+                                                <img alt="ecommerce" class={`lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded ${visible1 ? 'element-visible1' : 'element-hidden'}`} src={data.img1} />
+                                                <img alt="ecommerce" class={`lg:w- mx-10 ml-auto w-40 lg:h-72 h-64 object-cover object-center rounded ${visible1 ? 'element-visible1' : 'element-hidden'}`} src={data.img2} />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </div>
 
                     </div>
                 </div>
@@ -298,8 +313,41 @@ function Main() {
 
 
 
+            {/* Location  */}
+            <section class="body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full">
+                        <h2 class="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Location & Backdrop</h2>
+                        <h1 class="lg:w-[70%] mx-auto sm:text-5xl text-3xl font-bold title-font mb-5 text-[#3F3503]">
+                            Choose from a wide range of locations and studio backdrop</h1>
+
+                    </div>
+
+                    <section class="text-gray-600 body-font">
+                        <div class="container px-5 pt-24 mx-auto">
+
+                            <div class="flex flex-wrap -m-4">
+                                {location.map((data) => {
+                                    return (
+                                        <div class="xl:w-1/5 md:w-1/2 p-">
+                                            <div class="p-6 rounded-lg">
+                                                <img class="h-[45vh] rounded w-full object-cover object-center mb-6" src={data.img} alt="content" />
+
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
             {/* Pricing */}
-            <section class="bg-gray-100 body-font overflow-hidden">
+            <section class="bg-[#efeded] body-font overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full">
                         <h2 class="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Pricing</h2>
@@ -320,8 +368,8 @@ function Main() {
 
 
 
-                                <div class="p-4 xl:w-1/4 md:w-1/2 w-full mx-auto">
-                                    <div class="h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
+                                <div class="p-4 xl:w-1/4 md:w-1/2 w-full mx-auto ">
+                                    <div class="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
                                         <h1 class="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
                                             <span>{data.price}</span>
                                             <span class="text-xl ml-1 font-semibold text-[#676161]">/shoot</span>
@@ -356,6 +404,136 @@ function Main() {
             </section>
 
 
+            {/* Questions and answer */}
+            <section class="text-gray-600 body-font">
+                <div class="container px-10 py-24 mx-auto flex flex-wrap">
+                    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 lg:px-10 rounded-lg overflow-hidden">
+                        <h1 className='lg:text-6xl text-left text-[#6A0202] '>Frequently Asked Questions</h1>
+                    </div>
+                    <div class="flex flex-col flex-wrap lg:py-0 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                        <div class="flex flex-col mb-10 lg:items-start items-center">
+                            {/* {(const [visible, setVisible] = React.useState(false))} */}
+                            {questions.map((data) => {
+                                return (
+                                    <div class="flex-grow w-full mb-5">
+                                        <div className='w-full flex items-center mb-3'>
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">{data.ques}</h2>
+                                            {/* const [visible, setVisible] = React.useState(false) */}
+                                            <button className='ml-auto' onClick={() => setVisible(!visible)}>
+                                                {visible ? <RxCross2 /> : <AiOutlinePlus />}
+
+                                            </button>
+
+                                            {/* <AiOutlinePlus className='ml-auto' onClick={onClick} /> */}
+                                        </div>
+                                        <style>{`
+
+            .element-visible { display: block }
+            .element-hidden { display: none }
+
+      `}</style>
+
+                                        <p class={`w-[80%] leading-relaxed text-base text-justify ${visible ? 'element-visible' : 'element-hidden'} `}>{data.ans}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* Poster  */}
+            <section class="text-gray-600 body-font bg-[#537FEF] mx-20 rounded-3xl">
+                <div class="container mx-auto flex px-20 my-24 md:flex-row flex-col items-center">
+                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 class="title-font sm:text-6xl text-3xl mb-4 font-bold text-white">Get Your Models</h1>
+                        <p class="mb-8 leading-relaxed text-xl text-justify text-[#FFF5F5]">Just a few clicks away are your professional studio-like images and models. Don't miss out on the opportunity to showcase your garment's best image with AI-generated models!</p>
+                        <div class="flex w-full md:justify-start justify-center items-end">
+
+                            <button class="w-[30%] flex items-center mt-auto bg-[#001D66] hover:bg-white text-white hover:text-[#001D66] hover:font-semibold py-2 px-5 focus:outline-none rounded">Get your models
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <img class="object-cover mx-auto object-center rounded" alt="hero" src="models/posterimg.png" />
+                    </div>
+                </div>
+            </section>
+
+            <div className='my-24'>
+                <img src='footerimg.png' />
+            </div>
+
+
+            {/* Footer  */}
+            <footer class="body-font bg-[#efeded]">
+                <div class="container px-10 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                        <a href='/' class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                            <span class="text-3xl text-black font-bold">Model Verse</span>
+                        </a>
+                        <p class="mt-2 text-sm text-black text-justify">Professional Model Catalogs, without physical studio Photoshoot</p>
+                        <p class="mt-2 text-sm text-black text-justify">© Copyright 2023 All Rights Reserved by Jumbla Creations PTE LTD.</p>
+                    </div>
+                    <div class="flex-grow flex flex-wrap md:px-24 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+
+                            <nav class="list-none my-14">
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">Refund</a>
+                                </li>
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">Terms & Conditions</a>
+                                </li>
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">Privacy Policy</a>
+                                </li>
+                            </nav>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+
+                            <nav class="list-none my-14">
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">FAQ’s</a>
+                                </li>
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">Examples</a>
+                                </li>
+                                <li className='my-5'>
+                                    <a class="text-black hover:text-gray-800">Get Started</a>
+                                </li>
+                            </nav>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+                            <h2 class="w-full title-font font-bold text-black tracking-widest text-3xl mb-3">Get In Touch</h2>
+                            <nav class="list-none mb-10">
+                                <li>
+                                    <input class="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Name' />
+                                </li>
+                                <li>
+                                    <input class="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Contact Info.' />
+                                </li>
+                                <li className='flex'>
+                                    <input class="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Message' />
+                                    <button className='bg-[#001D66] px-4 mx-3 my-2 rounded-md text-white text-sm'>
+                                        Submit
+                                    </button>
+                                </li>
+                                <li>
+                                    <a class="text-gray-600 text-xs hover:text-gray-800">or email us at contact@modelverse.in</a>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
 
 
 

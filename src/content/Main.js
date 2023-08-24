@@ -46,3 +46,49 @@ exports.pricing = [
         'images': '250',
     }
 ]
+
+exports.questions = [
+    {
+        'ques': 'What happens to my data after?',
+        'ans': 'We will automatically delete the data provided by you  from our servers/GPU APIs within 30 days. However, you can also delete them instantly by pressing the "Delete" button.'
+    },
+    {
+        'ques': 'What happens toWhere do you store my data?',
+        'ans': 'We take the security of your data very seriously. We store it on servers in the India that are managed by our highly secure third-party partners.'
+    },
+    {
+        'ques': 'Can I get my data deleted instantly?',
+        'ans': 'We will delete your photos and data from our databases within 30 days. You can also request us to delete them instantly by emailing us'
+    },
+    {
+        'ques': 'Is my payment secured?',
+        'ans': 'Currently we accept payments through stripe. In case, if you want to pay through UPI, please write to us. None of your credit/debit card information gets stored with us '
+    },
+    {
+        'ques': 'Can I ask for refund?',
+        'ans': 'The refund of purchases can be made within 14 days, provided we haven’t processed your images..'
+    },
+    {
+        'ques': 'Where can I use my Model Images?',
+        'ans': 'After purchasing the service, we deliver you full commercial license and ownership of the on-model images. You can use it anywhere you want to.'
+    },
+]
+
+
+exports.location = [
+    {
+        'img': 'models/img30.png'
+    },
+    {
+        'img': 'models/img31.png'
+    },
+    {
+        'img': 'models/img32.png'
+    },
+    {
+        'img': 'models/img33.png'
+    },
+    {
+        'img': 'models/img34.png'
+    },
+]

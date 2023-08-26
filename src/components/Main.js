@@ -1,14 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import styled, { keyframes, css } from "styled-components";
 import { MdArrowForward } from 'react-icons/md';
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
+import { AiOutlinePlus } from 'react-icons/ai';
 import { RxCross2 } from 'react-icons/rx';
 import { HowItWorks } from '../content/Main'
-import { pricing } from '../content/Main'
+// import { pricing } from '../content/Main'
 import { location } from '../content/Main'
 import { questions } from '../content/Main'
 // import { MdDoneAll } from 'react-icons/md';
 
 function Main() {
+
+    const row1 = [
+        "models/img7.png",
+        "models/img8.png",
+        "models/img9.png",
+        "models/img10.png",
+        "models/img35.png",
+        "models/img23.png",
+        "models/img11.png",
+        "models/img22.png",
+        "models/img12.png",
+        //    "models/img7.png",
+    ];
 
     const [visible, setVisible] = React.useState(false)
     const [visible1, setVisible1] = React.useState(false)
@@ -25,7 +39,7 @@ function Main() {
             "desc": "Our AI starts it’s work"
         },
         {
-            "icon": "ellipseicon.png",
+            "icon": "downloadicon.png",
             "position": "Third:",
             "desc": "Download your models"
         }
@@ -65,10 +79,10 @@ function Main() {
 
             <div>
                 <div className='relative'>
-                    <img className='opacity-50' src='bg1.png' />
+                    <img className='opacity' src='bg1.png' />
                 </div>
 
-                <section class="absolute lg:top-32 top-12 text-gray-600 w-full body-font">
+                <section class="absolute lg:top-32 top-12  w-full body-font">
                     <div class="container lg:px-5 lg:py-24 py-10">
                         <div class="flex flex-col text-center w-full mb-10">
                             <h1 class="lg:w-[60%] mx-auto lg:text-4xl text-xl font-semibold title-font mb-2 text-[#072C81]">Professional Model Catalogs, </h1>
@@ -93,24 +107,51 @@ function Main() {
                         <div class="container lg:w-[80%] px-5 py-5 mx-auto bg-[#F8F7F7] border-[1px] border-black rounded-md shadow-sm shadow-black">
                             <div class="lg:flex lg:flex-wrap sm:-m-4 mx-auto md:space-y-0 space-y-6">
 
-                                {icons.map((data) => {
-                                    return (
-                                        <div class="lg:p-4 lg:w-1/4 lg:flex items-center lg:mx-auto mx-3">
-                                            <div class="lg:w-12 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                                <img src={data.icon} />
-                                            </div>
-                                            <div class="flex-grow lg:text-start">
-                                                <h2 class="text-gray-900 lg:text-lg text-sm title-font font-semibold">{data.position}</h2>
-                                                <p class="leading-relaxed lg:text-base text-xs">{data.desc}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
+                                <div class="lg:p-4 lg:w-1/4 lg:flex items-center lg:mx-auto mx-3">
+                                    <div class="lg:w-12 w-10 bg-[#F9EBA3] border-[1px] border-black lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <img src='uploadicon.png' />
+                                    </div>
+                                    <div class="flex-grow lg:text-start">
+                                        <h2 class="text-gray-900 lg:text-lg text-sm title-font font-semibold">First:</h2>
+                                        <p class="leading-relaxed lg:text-base text-xs">Upload Raw Images</p>
+                                    </div>
+                                </div>
+
+                                <div class="lg:p-4 lg:w- lg:flex items-center lg:mx-auto mx-3">
+                                    <div class="lg:w-20 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <img src='arrow1.png' />
+                                    </div>
+                                </div>
+                                <div class="lg:p-4 lg:w-1/4 lg:flex items-center lg:mx-auto mx-3">
+                                    <div class="lg:w-12 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <img src='starsicon.png' />
+                                    </div>
+                                    <div class="flex-grow lg:text-start">
+                                        <h2 class="text-gray-900 lg:text-lg text-sm title-font font-semibold">Second:</h2>
+                                        <p class="leading-relaxed lg:text-base text-xs">Our AI starts it’s work</p>
+                                    </div>
+                                </div>
+                                <div class="lg:p-4 lg:w- lg:flex items-center lg:mx-auto mx-3">
+                                    <div class="lg:w-20 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <img src='arrow2.png' />
+                                    </div>
+                                </div>
+
+                                <div class="lg:p-4 lg:w-1/4 lg:flex items-center lg:mx-auto mx-3">
+                                    <div class="lg:w-12 w-10 bg-[#F9EBA3] border-[1px] border-black lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <img src='downloadicon.png' />
+                                    </div>
+                                    <div class="flex-grow lg:text-start">
+                                        <h2 class="text-gray-900 lg:text-lg text-sm title-font font-semibold">Third:</h2>
+                                        <p class="leading-relaxed lg:text-base text-xs">Download your models</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
-                    {/* <section class="absolute text-gray-600 body-font top-[80%]"> */}
+                    {/* <section class="absolute  body-font top-[80%]"> */}
 
                     {/* </section> */}
 
@@ -118,31 +159,31 @@ function Main() {
             </div>
 
 
-            <section class="text-gray-600 body-font lg:my-0 mt-[70%]">
+            <section class="text-black body-font lg:my-0 mt-[70%]">
                 <div class="container py-10 mx-auto">
 
                     <div class="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[100%]">
 
                         <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 class="text-lg sm:text-xl mx-4 text-gray-900 text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
+                            <h2 class="text-lg sm:text-xl mx-4 text-black text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
                             <div class="mx-4 py-4 w-full">
                                 <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>HD Quality Images
                                     </a>
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>30+ Unique Location & Models
                                     </a>
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
@@ -152,38 +193,38 @@ function Main() {
                             </div>
                         </div>
 
-                        <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center  mb-4 border-b border-gray-200">
+                        <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-[#5B85EF] border-opacity-60">
+                            <h1 class="text-5xl text-black leading-none flex items-center  mb-4 ">
                                 <span className='text-[#001D66]'>$19</span>
-                                <span class="text-base ml-auto font-normal text-gray-500">starting at per catalog</span>
+                                <span class="text-base ml-auto font-normal text-black">starting at per catalog</span>
                             </h1>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center mb-4 border-b border-gray-200">
-                                <span>3</span>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center mb-4 ">
+                                <span className='text-[#001D66]'>3</span>
                                 <span className='text-[#001D66] text-lg'>hrs</span>
-                                <span class="text-base ml-auto font-normal text-gray-500">fastest turn around</span>
+                                <span class="text-base ml-auto font-normal text-black">fastest turn around</span>
                             </h1>
                         </div>
 
-                        <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                        <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-[#5B85EF] border-opacity-60">
                             <h2 class="text-lg sm:text-xl mx-4 text-gray-900 text-left font-semibold title-font mb-2">Why choose AI Photoshoot?</h2>
                             <div class="mx-4 py-4 w-full">
                                 <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>Can’t be distinguished from real photos
                                     </a>
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>No need for physical shoots
                                     </a>
                                     <a>
-                                        <span class="bg-transparent text-gray-700 border-gray-700 border-[1.5px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <span class="bg-transparent text-gray-700 border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
@@ -198,16 +239,16 @@ function Main() {
 
             {/* 11,112 AI Models already generated */}
             {/* for 66+ happy customers! */}
-            <section class="text-gray-600 body-font mt-10">
+            <section class=" body-font mt-10">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-col text-center w-full mb-0">
-                        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
+                        <h1 class="lg:w-[70%] mx-auto sm:text-5xl text-2xl font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">See what their results look like below</p>
                     </div>
                 </div>
             </section>
 
-            <section class="text-gray-600 body-font flex">
+            <section class=" body-font flex">
                 <div class="container px-5 py- mx-auto">
                     <div className='my- flex items-center'>
                         <img className='w-[5%]' src='models/img1_1.png' />
@@ -249,7 +290,7 @@ function Main() {
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">None of the images are real. All of them are the creation of Model Verse</p>
             </div>
 
-            <section class="text-gray-600 body-font">
+            <section class=" body-font">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap -m-4">
                         {imagecarousel.map((item) => (
@@ -264,15 +305,43 @@ function Main() {
             </section>
 
 
+            <AppContainer>
+                <Wrapper>
+                    <Marquee>
+                        <MarqueeGroup>
+                            {row1.map((el) => (
+                                <ImageGroup>
+                                    <Image src={el} className='mx-10' />
+                                </ImageGroup>
+                            ))}
+                        </MarqueeGroup>
+                        <MarqueeGroup>
+                            {row1.map((el) => (
+                                <ImageGroup>
+                                    <Image src={el} />
+                                </ImageGroup>
+                            ))}
+                        </MarqueeGroup>
+                    </Marquee>
+                </Wrapper>
+            </AppContainer>
+
+
 
             {/* How it works? */}
-            <section class="text-gray-600 body-font bg-[#efeded] overflow-hidden">
-                <div class="container px-5 py-24 mx-auto">
+            <section class=" body-font bg-[#efeded] my-10 overflow-hidden">
+                <div class="container px-5 py-10 mx-auto">
 
                     <div class="flex flex-wrap mx-10">
                         <h2 class="text-3xl font-semibold text-left my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
                         <h1 class="text-[#18347B] text-4xl text-left my-5 title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
 
+
+
+
+                        {/* {function () {
+                            const [visible2, setVisible2] = useState;
+                        }} */}
                         <div className='my-5'>
                             {HowItWorks.map((data) => {
                                 return (
@@ -313,6 +382,11 @@ function Main() {
 
 
 
+
+
+
+
+
             {/* Location  */}
             <section class="body-font overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
@@ -323,7 +397,7 @@ function Main() {
 
                     </div>
 
-                    <section class="text-gray-600 body-font">
+                    <section class=" body-font">
                         <div class="container px-5 pt-24 mx-auto">
 
                             <div class="flex flex-wrap -m-4">
@@ -363,41 +437,98 @@ function Main() {
                     <div class="flex flex-wrap -m-4">
 
 
-                        {pricing.map((data) => {
-                            return (
+                        {/* {pricing.map((data) => {
+                            return ( */}
 
 
 
-                                <div class="p-4 xl:w-1/4 md:w-1/2 w-full mx-auto ">
-                                    <div class="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
-                                        <h1 class="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
-                                            <span>{data.price}</span>
-                                            <span class="text-xl ml-1 font-semibold text-[#676161]">/shoot</span>
-                                        </h1>
-                                        <h2 className='font-semibold text-2xl text-left text-black my-5'>includes</h2>
-                                        <p class="flex items-center text-gray-600 mb-2">
-                                            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
-                                                <MdArrowForward />
-                                            </span>
-                                            <span className='font-bold'>{data.images}&nbsp;</span>Images
-                                        </p>
-                                        <p class="flex items-center text-gray-600 mb-2">
-                                            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
-                                                <MdArrowForward />
-                                            </span>
-                                            <span className='font-bold'>2&nbsp;</span>hour down time
-                                        </p>
+                        <div class="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                            <div class="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
+                                <h1 class="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
+                                    <span>$19</span>
+                                    <span class="text-xl ml-1 font-semibold text-[#676161]">/shoot</span>
+                                </h1>
+                                <h2 className='font-semibold text-2xl text-left text-black my-5'>includes</h2>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>50&nbsp;</span>Images
+                                </p>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                </p>
 
-                                        <button class="flex items-center mt-auto text-black border-2 border-[#6A0202] hover:text-white hover:bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
-                                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <button class="flex items-center mt-auto text-black border-2 border-[#6A0202] hover:text-white hover:bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
 
-                                </div>
-                            )
-                        })}
+
+                        <div class="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                            <div class="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
+                                <h1 class="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
+                                    <span>$29</span>
+                                    <span class="text-xl ml-1 font-semibold text-[#676161]">/shoot</span>
+                                </h1>
+                                <h2 className='font-semibold text-2xl text-left text-black my-5'>includes</h2>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>110&nbsp;</span>Images
+                                </p>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                </p>
+
+                                <button class="flex items-center mt-auto border-2 border-[#6A0202] text-white bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                            <div class="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
+                                <h1 class="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
+                                    <span>$49</span>
+                                    <span class="text-xl ml-1 font-semibold text-[#676161]">/shoot</span>
+                                </h1>
+                                <h2 className='font-semibold text-2xl text-left text-black my-5'>includes</h2>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>250&nbsp;</span>Images
+                                </p>
+                                <p class="flex items-center  mb-2">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
+                                        <MdArrowForward />
+                                    </span>
+                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                </p>
+
+                                <button class="flex items-center mt-auto text-black border-2 border-[#6A0202] hover:text-white hover:bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+
 
                     </div>
                 </div>
@@ -405,10 +536,11 @@ function Main() {
 
 
             {/* Questions and answer */}
-            <section class="text-gray-600 body-font">
+            <section class=" body-font">
                 <div class="container px-10 py-24 mx-auto flex flex-wrap">
                     <div class="lg:w-1/2 w-full mb-10 lg:mb-0 lg:px-10 rounded-lg overflow-hidden">
                         <h1 className='lg:text-6xl text-left text-[#6A0202] '>Frequently Asked Questions</h1>
+                        <p className='lg:w-[80%] my-10 text-xl text-left'>Answers to some commonly asked questions. Incase if you still have any query, feel free tow rite us at </p>
                     </div>
                     <div class="flex flex-col flex-wrap lg:py-0 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                         <div class="flex flex-col mb-10 lg:items-start items-center">
@@ -445,7 +577,7 @@ function Main() {
 
 
             {/* Poster  */}
-            <section class="text-gray-600 body-font bg-[#537FEF] mx-20 rounded-3xl">
+            <section class=" body-font bg-[#537FEF] mx-20 rounded-3xl">
                 <div class="container mx-auto flex px-20 my-24 md:flex-row flex-col items-center">
                     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 class="title-font sm:text-6xl text-3xl mb-4 font-bold text-white">Get Your Models</h1>
@@ -526,7 +658,7 @@ function Main() {
                                     </button>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 text-xs hover:text-gray-800">or email us at contact@modelverse.in</a>
+                                    <a class=" text-xs hover:text-gray-800">or email us at contact@modelverse.in</a>
                                 </li>
                             </nav>
                         </div>
@@ -542,3 +674,71 @@ function Main() {
 }
 
 export default Main
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 40vh;
+  color: #000000;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const Marquee = styled.div`
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+`;
+
+const scrollX = keyframes`
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+`;
+
+const common = css`
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 110%;
+  animation: ${scrollX} 30s linear infinite;
+`;
+
+const MarqueeGroup = styled.div`
+  ${common}
+`;
+
+const ImageGroup = styled.div`
+  display: grid;
+  place-items: center;
+`;
+
+const Image = styled.img`
+  width: 30vw;
+  height: 30vh;
+  padding: 0 10px;
+`;

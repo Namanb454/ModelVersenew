@@ -329,7 +329,7 @@ function Main() {
 
 
             {/* How it works? */}
-            <section class=" body-font bg-[#efeded] my-10 overflow-hidden">
+            <section class=" body-font  bg-[#efeded] my-10 overflow-hidden">
                 <div class="container px-5 py-10 mx-auto">
 
                     <div class="flex flex-wrap mx-10">

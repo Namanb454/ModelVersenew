@@ -6,7 +6,7 @@ import Main from '../components/Main'
 function Home() {
     return (
         <div>
-            <div>
+            <div className='lg:w-full hidden'>
                 <Header />
             </div>
             <div>

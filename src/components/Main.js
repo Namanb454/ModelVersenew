@@ -707,7 +707,7 @@ export default Main
 
 
 const AppContainerbg = styled.div`
-  width: 100vw;
+  width: 98vw;
   height: ;
   color: #000000;
 
@@ -987,9 +987,9 @@ const Imagebghwt2 = styled.img`
 
 
 
-
+// images carousel 
 const AppContainer = styled.div`
-  width: 100vw;
+  width: 98vw;
   height: ;
   color: #000000;
 

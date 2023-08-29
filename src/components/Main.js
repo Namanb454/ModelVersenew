@@ -90,7 +90,7 @@ function Main() {
 
             <div>
                 <div className='relative w-full'>
-                    <img className='w-full' src='bg1.png' />
+                    <img className='w-full' src='footerimg.png' />
                 </div>
 
                 <section className="absolute  lg:top-32 top-12 body-font w-full">
@@ -168,10 +168,10 @@ function Main() {
 
 
 
-            <section className="text-black body-font lg:my-0 mt-[50%]">
+            <section className="text-black body-font lg:my-0 mt-[60%]">
                 <div className="container mx-auto">
 
-                    <div className="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[80%]">
+                    <div className="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[90%]">
 
                         <div className="xl:w-1/3 lg:w-1/2 md:w-full w-[90%] mx-auto px-8 py-6 lg:border-l-2 border-gray-200 border-opacity-60">
                             <h2 className="text-lg sm:text-xl w-fit lg:mx-4 text-black text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
@@ -340,34 +340,32 @@ function Main() {
 
 
             {/* How it works? */}
-            <section className=" body-font  bg-[#efeded] my-10 overflow-hidden">
-                <div className="container px-5 py-10 mx-auto">
+            <section className=" body-font bg-[#efeded] my-10 overflow-hidden">
+                <div className="container lg:py-10 py-5 mx-auto">
 
-                    <div className="flex flex-wrap mx-10">
-                        <h2 className="text-3xl font-semibold text-left my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
-                        <h1 className="text-[#18347B] text-4xl text-left my-5 title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
+                    <div className="flex flex-wrap lg:px-20 px-5">
+                        <h2 className="lg:text-3xl text-base font-semibold text-left lg:my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
+                        <h1 className="text-[#18347B] lg:text-4xl text-xl text-left my-5 title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
 
 
-                        <div className='my-5 w-1/2'>
+                        <div className='my-5 lg:w-1/2 w-full'>
                             {HowItWorks.map((data) => {
                                 return (
-                                    <div className="w-full lg:py- mb-6 lg:mb-0">
+                                    <div className="w-full my-5 lg:my-5">
                                         <div className='flex mx-auto'>
-                                            <div className={`lg:w-full ${visible1 ? 'heading-visible1' : 'heading-hidden'}`}>
-                                                <div className='px-5 flex'>
+                                            <div className={`lg:w-full w-full ${visible1 ? 'heading-visible1' : 'heading-hidden'}`}>
+                                                <div className='px-5 w-[100%] items-center flex'>
 
-                                                    <h2 className='text-black text-2xl text-left title-font font-semibold mb-4'>{data.heading}</h2>
+                                                    <h2 className='text-black lg:text-2xl text-sm text-left title-font font-semibold'>{data.heading}</h2>
                                                     <button className='ml-auto' onClick={() => setVisible1(!visible1)}>
                                                         {visible1 ? <RxCross2 /> : <AiOutlinePlus />}
                                                     </button>
                                                 </div>
                                                 <style>{`
-
             .element-visible1 { display: block }
             .element-hidden { display: none }
-
       `}</style>
-                                                <p className={`w-[90%] leading-relaxed mb-4 px-5 text-xl text-justify ${visible1 ? 'element-visible1' : 'element-hidden'}`}>{data.desc}</p>
+                                                <p className={`w-[90%] leading-relaxed mb-4 px-5 lg:text-xl text-sm text-justify ${visible1 ? 'element-visible1' : 'element-hidden'}`}>{data.desc}</p>
                                             </div>
 
                                         </div>
@@ -375,12 +373,14 @@ function Main() {
                                 )
                             })}
                         </div>
-                        <div>
+
+
+                        <div className='lg:w-1/2 w-full'>
                             {HowItWorks.map((img) => {
                                 return (
-                                    <div className='w-full flex ml-auto'>
-                                        <img alt="ecommerce" className={`lg:w-[40%] mx-10 ml-auto w-40 lg:h-72 my-5 h-64 object-cover object-center rounded `} src={img.img1} />
-                                        <img alt="ecommerce" className={`lg:w-[40%] mx-10 ml-auto w-40 lg:h-72 my-5 h-64 object-cover object-center rounded`} src={img.img2} />
+                                    <div className='w-[100%] flex'>
+                                        <img alt="ecommerce" className={`lg:w-[15vw] mx-auto w-20 lg:h-auto my-5 object-cover object-center rounded `} src={img.img1} />
+                                        <img alt="ecommerce" className={`lg:w-[15vw] mx-auto w-20 lg:h-auto my-5 object-cover object-center rounded`} src={img.img2} />
                                     </div>
                                 )
                             })}
@@ -392,23 +392,23 @@ function Main() {
 
             {/* Location  */}
             <section className="body-font overflow-hidden">
-                <div className="container px-5 py-24 mx-auto">
+                <div className="container px-5 lg:py-10 py-10 mx-auto">
                     <div className="flex flex-col text-center w-full">
-                        <h2 className="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Location & Backdrop</h2>
-                        <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-3xl font-bold title-font mb-5 text-[#3F3503]">
+                        <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Location & Backdrop</h2>
+                        <h1 className="lg:w-[70%] mx-auto lg:text-5xl text-2xl font-bold title-font mb-5 text-[#3F3503]">
                             Choose from a wide range of locations and studio backdrop</h1>
 
                     </div>
 
                     <section className=" body-font">
-                        <div className="container px-5 pt-24 mx-auto">
+                        <div className="container px-5 lg:pt-24 pt-10 mx-auto">
 
                             <div className="flex flex-wrap -m-4">
                                 {location.map((data) => {
                                     return (
-                                        <div className="xl:w-1/5 md:w-1/2 p-">
-                                            <div className="p-6 rounded-lg">
-                                                <img className="h-[45vh] rounded w-full object-cover object-center mb-6" src={data.img} alt="content" />
+                                        <div className="xl:w-1/5 w-1/2 md:w-1/2 p-">
+                                            <div className="lg:p-6 p-3 mx-auto rounded-lg">
+                                                <img className="lg:h-[45vh] h-[25vh] rounded w-full object-cover object-center mb-" src={data.img} alt="content" />
 
                                             </div>
                                         </div>
@@ -427,22 +427,15 @@ function Main() {
             <section className="bg-[#efeded] body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Pricing</h2>
-                        <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-3xl font-bold title-font mb-5 text-[#3F3503]">
+                        <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Pricing</h2>
+                        <h1 className="lg:w-[70%] mx-auto lg:text-5xl text-2xl font-bold title-font mb-5 text-[#3F3503]">
                             Model Catalog Photo Shoot for 50x cheaper than Physical shoot</h1>
-                        <p className="lg:w-[50%] mx-auto leading-relaxed text-base text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
+                        <p className="lg:w-[50%] mx-auto leading-relaxed lg:text-base text-sm text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
 
                     </div>
 
                     <div className="flex flex-wrap -m-4">
-
-
-                        {/* {pricing.map((data) => {
-                            return ( */}
-
-
-
-                        <div className="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                        <div className="p-4 xl:w-1/4 lg:h-[75vh] md:w-1/2 w-[85%] mx-auto ">
                             <div className="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
                                 <h1 className="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
                                     <span>$19</span>
@@ -471,7 +464,7 @@ function Main() {
                         </div>
 
 
-                        <div className="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                        <div className="p-4 xl:w-1/4 lg:h-[75vh] md:w-1/2 w-[85%] mx-auto ">
                             <div className="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
                                 <h1 className="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
                                     <span>$29</span>
@@ -500,7 +493,7 @@ function Main() {
                         </div>
 
 
-                        <div className="p-4 xl:w-1/4 h-[75vh] md:w-1/2 w-full mx-auto ">
+                        <div className="p-4 xl:w-1/4 lg:h-[75vh] md:w-1/2 w-[85%] mx-auto ">
                             <div className="bg-white h-full p-6 rounded-lg py-10 shadow-md shadow-gray-600 hover:border-[#6A0202] border-2 flex flex-col relative overflow-hidden">
                                 <h1 className="text-7xl mx-auto text-[#6A0202] leading-none flex items-end pb-4 mb-4 border-b border-gray-200">
                                     <span>$49</span>
@@ -537,10 +530,10 @@ function Main() {
 
             {/* Questions and answer */}
             <section className=" body-font">
-                <div className="container px-10 py-24 mx-auto flex flex-wrap">
-                    <div className="lg:w-1/2 w-full mb-10 lg:mb-0 lg:px-10 rounded-lg overflow-hidden">
-                        <h1 className='lg:text-6xl text-left text-[#6A0202] '>Frequently Asked Questions</h1>
-                        <p className='lg:w-[80%] my-10 text-xl text-left'>Answers to some commonly asked questions. Incase if you still have any query, feel free tow rite us at </p>
+                <div className="container px-10 lg:py-24 py-10 mx-auto flex flex-wrap">
+                    <div className="lg:w-1/2 w-full mb-0 lg:mb-0 lg:px-10 rounded-lg overflow-hidden">
+                        <h1 className='lg:text-6xl text-3xl text-left text-[#6A0202] '>Frequently Asked Questions</h1>
+                        <p className='lg:w-[80%] my-10 lg:text-xl text-base text-left'>Answers to some commonly asked questions. Incase if you still have any query, feel free tow rite us at </p>
                     </div>
                     <div className="flex flex-col flex-wrap lg:py-0 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                         <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -549,14 +542,11 @@ function Main() {
                                 return (
                                     <div className="flex-grow w-full mb-5">
                                         <div className='w-full flex items-center mb-3'>
-                                            <h2 className="text-gray-900 text-lg title-font font-semibold">{data.ques}</h2>
+                                            <h2 className="text-gray-900 lg:text-lg text-sm text-left title-font font-semibold">{data.ques}</h2>
                                             {/* const [visible, setVisible] = React.useState(false) */}
                                             <button className='ml-auto' onClick={() => setVisible(!visible)}>
                                                 {visible ? <RxCross2 /> : <AiOutlinePlus />}
-
                                             </button>
-
-                                            {/* <AiOutlinePlus className='ml-auto' onClick={onClick} /> */}
                                         </div>
                                         <style>{`
 
@@ -565,7 +555,7 @@ function Main() {
 
       `}</style>
 
-                                        <p className={`w-[80%] leading-relaxed text-base text-justify ${visible ? 'element-visible' : 'element-hidden'} `}>{data.ans}</p>
+                                        <p className={`w-[80%] leading-relaxed lg:text-base text-sm text-justify ${visible ? 'element-visible' : 'element-hidden'} `}>{data.ans}</p>
                                     </div>
                                 )
                             })}
@@ -577,14 +567,14 @@ function Main() {
 
 
             {/* Poster  */}
-            <section className=" body-font bg-[#537FEF] mx-20 rounded-3xl">
-                <div className="container mx-auto flex px-20 my-24 md:flex-row flex-col items-center">
+            <section className=" body-font bg-[#537FEF] lg:mx-20 rounded-3xl">
+                <div className="container mx-auto flex lg:px-20 lg:my-24 my-10 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="title-font sm:text-6xl text-3xl mb-4 font-bold text-white">Get Your Models</h1>
-                        <p className="mb-8 leading-relaxed text-xl text-justify text-[#FFF5F5]">Just a few clicks away are your professional studio-like images and models. Don't miss out on the opportunity to showcase your garment's best image with AI-generated models!</p>
+                        <h1 className="title-font lg:text-6xl text-3xl lg:my-5 lg:px-0 px-10 my-10 mb-4 font-bold text-white">Get Your Models</h1>
+                        <p className="mb-8 leading-relaxed lg:text-xl lg:px-0 px-5 text-base text-justify text-[#FFF5F5]">Just a few clicks away are your professional studio-like images and models. Don't miss out on the opportunity to showcase your garment's best image with AI-generated models!</p>
                         <div className="flex w-full md:justify-start justify-center items-end">
 
-                            <button className="w-[30%] flex items-center mt-auto bg-[#001D66] hover:bg-white text-white hover:text-[#001D66] hover:font-semibold py-2 px-5 focus:outline-none rounded">Get your models
+                            <button className="lg:w-[30%] w-[50%] flex items-center mt-auto bg-[#001D66] hover:bg-white text-white hover:text-[#001D66] hover:font-semibold py-2 px-5 focus:outline-none rounded">Get your models
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
@@ -593,7 +583,7 @@ function Main() {
 
                     </div>
                     <div className="">
-                        <img className="object-cover mx-auto object-center rounded" alt="hero" src="models/posterimg.png" />
+                        <img className="lg:w-full w-[50%] object-cover mx-auto object-center rounded" alt="hero" src="models/posterimg.png" />
                     </div>
                 </div>
             </section>

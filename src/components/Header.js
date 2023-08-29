@@ -9,7 +9,7 @@ function Header() {
                 <div className="container mx-auto px-20 flex flex-wrap p-2 flex-col md:flex-row items-center">
                     <span className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                         <MdDone className='text-[#22C55E] text-xs' />
-                        <span className="ml-2 text-xs">Founded in India. We respect your privacy</span>
+                        <span className="ml-2 lg:text-xs">Founded in India. We respect your privacy</span>
                     </span>
                     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-xs justify-center">
                         <AiFillStar className='text-[#22C55E]' />

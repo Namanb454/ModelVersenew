@@ -21,6 +21,17 @@ function Main() {
         "models/img11.png",
         "models/img22.png",
         "models/img12.png",
+    ];
+    const row2 = [
+        "models/img7.png",
+        "models/img8.png",
+        "models/img9.png",
+        "models/img10.png",
+        "models/img35.png",
+        "models/img23.png",
+        "models/img11.png",
+        "models/img22.png",
+        "models/img12.png",
         //    "models/img7.png",
     ];
 
@@ -84,12 +95,12 @@ function Main() {
 
                 <section className="absolute  lg:top-32 top-12 body-font w-full">
 
-                    <div className="container  lg:px-0 lg:mt-10 lg:py-10 mt-10 rounded-full backdrop-blur-sm backdrop-opacity-90 mx-auto lg:w-[75%]">
+                    <div className="container  lg:px-0 lg:mt-10 lg:py-10 mt-10 rounded-full backdrop-opacity-90 mx-auto lg:w-[75%]">
 
                         <div className="flex flex-col text-center w-full lg:mb-10 mb-5">
                             <h1 className="lg:w-[60%] mx-auto lg:text-4xl text-lg font-semibold title-font lg:mb-2 text-[#072C81]">Professional Model Catalogs, </h1>
                             <span className='lg:w-[70%] mx-auto lg:text-4xl text-lg font-semibold title-font text-[#072C81]'>without physical studio photoshoot</span>
-                            <p className="lg:w-2/3 mx-auto leading-relaxed lg:my-5 font-semibold text-black lg:text-lg text-sm">No.1 Professional AI Model Catalog Generator</p>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed lg:my-5 my-3 font-semibold text-black lg:text-lg text-sm">No.1 Professional AI Model Catalog Generator</p>
                             <p className="lg:w-[40%] mx-auto leading-relaxed text-xs">Get on-model images of your garments in minutes with our AI-</p>
                             <p className="lg:w-[45%] mx-auto leading-relaxed text-xs">photographer. Upload photos, pick style & receive 100+ On-Model Images</p>
                         </div>
@@ -101,7 +112,7 @@ function Main() {
                             </div>
                         </div>
                         <div className='flex my-10'>
-                            <p className="flex items-center lg:w-fit mx-auto leading-relaxed text-black text-base"><span className='font-semibold'>1835+</span> AI models already created
+                            <p className="flex lg:text-base text-sm items-center lg:w-fit mx-auto leading-relaxed text-black"><span className='font-semibold'>1835+</span> AI models already created
                                 <img className='h-5' src='stars.png' alt='images' />
                             </p>
                         </div>
@@ -119,8 +130,8 @@ function Main() {
                                     </div>
                                 </div>
 
-                                <div className="lg:p-4 lg:w- lg:flex items-center lg:mx-auto mx-3">
-                                    <div className="lg:w-20 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                <div className="lg:flex lg:w-20 hidden items-center lg:mx-auto mx-3">
+                                    <div className="lg:w-20 w-0 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                         <img src='arrow1.png' />
                                     </div>
                                 </div>
@@ -133,8 +144,8 @@ function Main() {
                                         <p className="leading-relaxed lg:text-base text-xs">Our AI starts it’s work</p>
                                     </div>
                                 </div>
-                                <div className="lg:p-4 lg:w- lg:flex items-center lg:mx-auto mx-3">
-                                    <div className="lg:w-20 w-10 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                <div className="lg:w-20 hidden lg:flex items-center lg:mx-auto mx-3">
+                                    <div className="lg:w-20 lg:h-12 h-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                         <img src='arrow2.png' />
                                     </div>
                                 </div>
@@ -157,78 +168,80 @@ function Main() {
 
 
 
-            <section className="text-black body-font lg:my-0 mt-[70%]">
-                <div className="container py-10 mx-auto">
+            <section className="text-black body-font lg:my-0 mt-[50%]">
+                <div className="container mx-auto">
 
-                    <div className="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[100%]">
+                    <div className="flex flex-wrap bg-[#C3CFED] lg:py-20 pt-[80%]">
 
-                        <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                            <h2 className="text-lg sm:text-xl mx-4 text-black text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
-                            <div className="mx-4 py-4 w-full">
-                                <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                                    <a>
+                        <div className="xl:w-1/3 lg:w-1/2 md:w-full w-[90%] mx-auto px-8 py-6 lg:border-l-2 border-gray-200 border-opacity-60">
+                            <h2 className="text-lg sm:text-xl w-fit lg:mx-4 text-black text-left font-semibold title-font mb-2">All Model Photoshoots include</h2>
+                            <div className="lg:mx-4 py-4 w-[90%] lg:text-base text-sm">
+                                <nav className="flex flex-col sm:items-start sm:text-left text-justify items-left -mb-1 space-y-2.5">
+                                    <span>
                                         <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>HD Quality Images
-                                    </a>
-                                    <a>
+                                    </span>
+                                    <span>
                                         <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>30+ Unique Location & Models
-                                    </a>
-                                    <a>
+                                    </span>
+                                    <span>
                                         <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
                                         </span>Wide Variety of Locations & Skin Tones
-                                    </a>
+                                    </span>
                                 </nav>
                             </div>
                         </div>
 
-                        <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-[#5B85EF] border-opacity-60">
+                        <div className="xl:w-1/3 lg:w-1/2 md:w-full w-[90%] mx-auto lg:px-8 py-6 lg:border-l-2 border-[#5B85EF] border-opacity-60">
                             <h1 className="text-5xl text-black leading-none flex items-center  mb-4 ">
-                                <span className='text-[#001D66]'>$19</span>
-                                <span className="text-base ml-auto font-normal text-black">starting at per catalog</span>
+                                <span className='text-[#001D66] text-right'>$19</span>
+                                <span className="lg:text-base text-sm ml-auto font-normal text-black">starting at per catalog</span>
                             </h1>
                             <h1 className="text-5xl text-gray-900 leading-none flex items-center mb-4 ">
                                 <span className='text-[#001D66]'>3</span>
                                 <span className='text-[#001D66] text-lg'>hrs</span>
-                                <span className="text-base ml-auto font-normal text-black">fastest turn around</span>
+                                <span className="lg:text-base text-sm ml-auto font-normal text-black">fastest turn around</span>
                             </h1>
                         </div>
 
-                        <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-[#5B85EF] border-opacity-60">
-                            <h2 className="text-lg sm:text-xl mx-4 text-gray-900 text-left font-semibold title-font mb-2">Why choose AI Photoshoot?</h2>
-                            <div className="mx-4 py-4 w-full">
-                                <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                                    <a>
-                                        <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
-                                                <path d="M20 6L9 17l-5-5"></path>
-                                            </svg>
-                                        </span>Can’t be distinguished from real photos
-                                    </a>
-                                    <a>
-                                        <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
-                                                <path d="M20 6L9 17l-5-5"></path>
-                                            </svg>
-                                        </span>No need for physical shoots
-                                    </a>
-                                    <a>
-                                        <span className="bg-transparent text-gray-700 border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
-                                                <path d="M20 6L9 17l-5-5"></path>
-                                            </svg>
-                                        </span>Different Location, Different Model, Same Garment, Anytime, Anywhere
-                                    </a>
-                                </nav>
+                        <div className="xl:w-1/3 lg:w-1/2 md:w-full w-[90%] py-6 mx-auto lg:border-l-2 border-[#5B85EF] border-opacity-60">
+                            <div>
+                                <h2 className="text-lg sm:text-xl lg:mx-4 mx-auto w-fit text-gray-900 text-left font-semibold title-font mb-2">Why choose AI Photoshoot?</h2>
+                                <div className="lg:mx-4 py-4 mx-auto w-[90%]">
+                                    <nav className="lg:text-base text-sm flex flex-col sm:items-start sm:text-left text-justify items-start -mb-1 space-y-2.5">
+                                        <span>
+                                            <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                </svg>
+                                            </span>Can’t be distinguished from real photos
+                                        </span>
+                                        <span>
+                                            <span className="bg-transparent text-black border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                </svg>
+                                            </span>No need for physical shoots
+                                        </span>
+                                        <span>
+                                            <span className="bg-transparent text-gray-700 border-black border-[1.8px] w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                </svg>
+                                            </span>Different Location, Different Model, Same Garment, Anytime, Anywhere
+                                        </span>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -240,17 +253,17 @@ function Main() {
             <section className=" body-font mt-10">
                 <div className="container px-5 mx-auto">
                     <div className="flex flex-col text-center w-full mb-0">
-                        <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-2xl font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">See what their results look like below</p>
+                        <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-lg font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed lg:text-base text-sm">See what their results look like below</p>
                     </div>
                 </div>
             </section>
 
             <section className=" body-font flex">
-                <div className="container px-5 py- mx-auto">
-                    <div className='my- flex items-center'>
-                        <img className='w-[5%]' src='models/img1_1.png' />
-                        <img className='h-[5vh]' src='models/forwardarrow.png' />
+                <div className="container px-5 mx-auto">
+                    <div className='mb-5 flex items-center'>
+                        <img className='lg:w-[5%] w-[20%]' src='models/img1_1.png' />
+                        <img className='lg:h-[5vh] h-[3vh]' src='models/forwardarrow.png' />
                     </div>
                     <div className="flex flex-wrap -m-4 mx-2">
                         {images1.map((data) => {
@@ -264,10 +277,10 @@ function Main() {
                         })}
                     </div>
                 </div>
-                <div className="container px-5 py- mx-auto">
-                    <div className='my- flex'>
-                        <img className='ml-auto h-[5vh]' src='models/backwardarrow.png' />
-                        <img className='w-[5%]' src='models/img4_1.png' />
+                <div className="container px-5 mx-auto">
+                    <div className='mb-5 flex'>
+                        <img className='ml-auto lg:h-[5vh] h-[3vh]' src='models/backwardarrow.png' />
+                        <img className='lg:w-[5%] w-[20%]' src='models/img4_1.png' />
                     </div>
                     <div className="flex flex-wrap -m-4 mx-2">
                         {images2.map((data) => {
@@ -285,16 +298,16 @@ function Main() {
 
             </section>
             <div className='my-2'>
-                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">None of the images are real. All of them are the creation of Model Verse</p>
+                <p className="lg:w-2/3 w-full px-10 mx-auto leading-relaxed lg:text-base text-sm">None of the images are real. All of them are the creation of Model Verse</p>
             </div>
 
             <section className=" body-font">
                 <div className="container px-5 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {imagecarousel.map((item) => (
-                            <div className="lg:w-[11%] md:w-1/2 p-4 w-full mx-auto">
-                                <div className="block relative lg:h-[30vh] rounded overflow-hidden">
-                                    <img alt="models" className="object-center lg:w-[30vw] w-full lg:h-[25vh] block" src={item.img} />
+                            <div className="lg:w-[11%] md:w-1/6 md:p-3 w-1/4 lg:p-4 p-2 mx-auto">
+                                <div className="block relative lg:h-[30vh] h-full rounded overflow-hidden">
+                                    <img alt="models" className="object-center lg:w-[30vw] lg:h-[25vh] h-[100%] block" src={item.img} />
                                 </div>
                             </div>
                         ))}
@@ -303,20 +316,20 @@ function Main() {
             </section>
 
 
-            <AppContainer>
-                <Wrapper>
-                    <Marquee>
-                        <MarqueeGroup>
+            <AppContainer className='lg:h-[40vh] h-[20vh]'>
+                <Wrapper className='Wrapper'>
+                    <Marquee className='Marquee'>
+                        <MarqueeGroup className='MarqueeGroup'>
                             {row1.map((el) => (
-                                <ImageGroup>
-                                    <Image src={el} />
+                                <ImageGroup className='ImageGroup'>
+                                    <Image src={el} className='' />
                                 </ImageGroup>
                             ))}
                         </MarqueeGroup>
-                        <MarqueeGroup>
-                            {row1.map((el) => (
-                                <ImageGroup>
-                                    <Image src={el} />
+                        <MarqueeGroup className='MarqueeGroup'>
+                            {row2.map((el1) => (
+                                <ImageGroup className='ImageGroup'>
+                                    <Image src={el1} className='Image' />
                                 </ImageGroup>
                             ))}
                         </MarqueeGroup>
@@ -377,12 +390,6 @@ function Main() {
             </section>
 
 
-
-
-
-
-
-
             {/* Location  */}
             <section className="body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
@@ -419,17 +426,14 @@ function Main() {
             {/* Pricing */}
             <section className="bg-[#efeded] body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-col text-center w-full">
+                    <div className="flex flex-col text-center w-full mb-20">
                         <h2 className="sm:text-3xl text-3xl font-semibold title-font mb-10 text-[#2F1F94]">Pricing</h2>
                         <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-3xl font-bold title-font mb-5 text-[#3F3503]">
                             Model Catalog Photo Shoot for 50x cheaper than Physical shoot</h1>
                         <p className="lg:w-[50%] mx-auto leading-relaxed text-base text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
 
                     </div>
-                    <div className='flex items-center mb-10'>
-                        <img className='h-[10vh]' src='models/forwardarrow.png' alt='images' />
-                        <img className='h-[10vh] ml-auto' src='models/backwardarrow.png' alt='images' />
-                    </div>
+
                     <div className="flex flex-wrap -m-4">
 
 
@@ -599,80 +603,14 @@ function Main() {
             </div>
 
 
-            {/* Footer  */}
-            <footer className="body-font bg-[#efeded]">
-                <div className="container px-10 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                    <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                        <a href='/' className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                            <span className="text-3xl text-black font-bold">Model Verse</span>
-                        </a>
-                        <p className="mt-2 text-sm text-black text-justify">Professional Model Catalogs, without physical studio Photoshoot</p>
-                        <p className="mt-2 text-sm text-black text-justify">© Copyright 2023 All Rights Reserved by Jumbla Creations PTE LTD.</p>
-                    </div>
-                    <div className="flex-grow flex flex-wrap md:px-24 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-
-                            <nav className="list-none my-14">
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">Refund</a>
-                                </li>
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">Terms & Conditions</a>
-                                </li>
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">Privacy Policy</a>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-
-                            <nav className="list-none my-14">
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">FAQ’s</a>
-                                </li>
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">Examples</a>
-                                </li>
-                                <li className='my-5'>
-                                    <a className="text-black hover:text-gray-800">Get Started</a>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-                            <h2 className="w-full title-font font-bold text-black tracking-widest text-3xl mb-3">Get In Touch</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <input className="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Name' />
-                                </li>
-                                <li>
-                                    <input className="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Contact Info.' />
-                                </li>
-                                <li className='flex'>
-                                    <input className="text-black py-1 bg-[#D9D9D9] my-2 px-3" placeholder='Enter Your Message' />
-                                    <button className='bg-[#001D66] px-4 mx-3 my-2 rounded-md text-white text-sm'>
-                                        Submit
-                                    </button>
-                                </li>
-                                <li>
-                                    <a className=" text-xs hover:text-gray-800">or email us at contact@modelverse.in</a>
-                                </li>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-            </footer>
-
-
-
         </div>
     )
 }
 
 export default Main
 const AppContainer = styled.div`
-  width: 98vw;
-  height: 40vh;
+  width: 100vw;
+  height: ;
   color: #000000;
 
   position: relative;
@@ -718,23 +656,44 @@ const common = css`
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   white-space: nowrap;
-  width: 110%;
-  animation: ${scrollX} 30s linear infinite;
+  width: 100%;
+  animation: ${scrollX} 20s linear infinite;  
 `;
+
+const style = {
+    '@media (max-width: 600px)': {
+        width: '100%',
+        justify: 'space-evenly',
+    },
+}
 
 const MarqueeGroup = styled.div`
   ${common}
+  ${style}
 `;
 
 const ImageGroup = styled.div`
-  display: grid;
-  place-items: center;
+  display: ;
+  place-items: ;
 `;
 
+const ResponsiveImage = {
+    '@media (max-width: 600px)': {
+        width: '40vw',
+        height: '10vh',
+        // padding: '0 0'
+    },
+}
+
+const Image1 = {
+    width: '10vw',
+    height: '30vh',
+    padding: '0 '
+}
+
 const Image = styled.img`
-  width: 30vw;
-  height: 30vh;
-  padding: 0 10px;
+  ${Image1}
+  ${ResponsiveImage}
 `;

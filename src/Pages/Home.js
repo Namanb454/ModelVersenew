@@ -14,10 +14,10 @@ function Home() {
                 <Navbar />
             </div>
             <div>
-                <Main />
+                {/* <Main /> */}
             </div>
             <div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )

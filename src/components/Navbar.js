@@ -9,20 +9,22 @@ const Navbar = () => {
 
     return (
         <nav className="">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 shadow-gray-300 shadow-md">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center w-full">
-                        <img src='ModelVerse.png' />
-                        <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-bold">ModelVerse</a>
-                        <div className="hidden md:block w-full">
+            <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-2 shadow-gray-300 shadow-md">
+                <div className="lg:flex items-center justify-between h-16">
+                    <div className="lg:flex items-center lg:w-full w-fit mx-auto">
+                        <div className='flex mx-auto w-fit'>
+                            <img src='ModelVerse.png' />
+                            <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-bold">ModelVerse</a>
+                        </div>
+                        <div className="md:block w-full">
                             {/* Add your navigation links here */}
-                            <nav class="w-fit mx-auto items-center text-base justify-center">
-                                <a href='#reviews' class="mx-8 text-sm hover:text-gray-900">Reviews and examples</a>
-                                <a href='#howitworks' class="mx-8 text-sm hover:text-gray-900">How it works?</a>
-                                <a href='#styles' class="mx-8 text-sm hover:text-gray-900">Styles</a>
-                                <a href='#pricing' class="mx-8 text-sm hover:text-gray-900">Pricing</a>
-                                <a href='#nearme' class="mx-8 text-sm hover:text-gray-900">Near me</a>
-                                <a href='#blog' class="mx-8 text-sm hover:text-gray-900">Blog</a>
+                            <nav class="w-full mx-auto items-center text-base justify-center">
+                                <a href='#reviews' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">Reviews and examples</a>
+                                <a href='#howitworks' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">How it works?</a>
+                                <a href='#styles' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">Styles</a>
+                                <a href='#pricing' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">Pricing</a>
+                                <a href='#nearme' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">Near me</a>
+                                <a href='#blog' class="lg:mx-8 lg:px-0 px-[6px] lg:text-sm text-[10px] hover:text-gray-900">Blog</a>
                             </nav>
                         </div>
                     </div>
@@ -36,7 +38,7 @@ const Navbar = () => {
                         </div>
 
                     </div>
-                    <div className="-mr-2 flex md:hidden">
+                    {/* <div className="-mr-2 flex md:hidden">
                         <button
                             onClick={toggleNavbar}
                             className="text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
@@ -65,39 +67,14 @@ const Navbar = () => {
                                 )}
                             </svg>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* Mobile menu */}
 
             <div className="md:hidden">
                 {/* Add your mobile navigation links here */}
-                {/* <div className="px-2 pt-4 pb-3 space-y-1 sm:px-3">
-                    
 
-
-
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base"
-                    >Reviews and examples
-                    </a>
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base">How it works?
-                    </a>
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base">Styles
-                    </a>
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base">Pricing
-                    </a>
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base">Near me
-                    </a>
-                    <a href="/" className="hover:text-gray-900 transition-all block px-3 py-2 rounded-md text-base">Blog
-                    </a>
-                    <a />
-                    <button class="items-center mx-1 shadow-md shadow-gray-300 border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 text-[#072C81] rounded text-sm mt-4 md:mt-0">Login
-                    </button>
-                    <button class="items-center mx-1 bg-[#072C81] text-white border-0 py-2 px-3 w-32 text-center  focus:outline-none hover:bg-gray-200 hover:text-[#072C81] rounded text-sm mt-4 md:mt-0">Get your images
-                    </button>
-                    <a />
-
-                </div> */}
             </div>
 
         </nav >

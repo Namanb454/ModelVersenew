@@ -7,17 +7,17 @@ import Footer from '../components/Footer'
 function Home() {
     return (
         <div>
-            <div>
-                {/* <Header /> */}
+            <div className='lg:block hidden'>
+                <Header />
             </div>
             <div>
                 <Navbar />
             </div>
             <div>
-                {/* <Main /> */}
+                <Main />
             </div>
             <div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
     )

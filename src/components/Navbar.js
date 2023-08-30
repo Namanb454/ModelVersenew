@@ -10,11 +10,22 @@ const Navbar = () => {
     return (
         <nav className="">
             <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-2 shadow-gray-300 shadow-md">
-                <div className="lg:flex items-center justify-between h-16">
+                <div className="lg:flex items-center justify-between h-[8vh]">
                     <div className="lg:flex items-center lg:w-full w-fit mx-auto">
-                        <div className='flex mx-auto w-fit'>
-                            <img src='ModelVerse.png' />
-                            <a href='/' className="flex-shrink-0 text-[#072C81] text-xl font-bold">ModelVerse</a>
+                        <div className='flex'>
+                            <div className='flex w-fit lg:mt-0 mt-3 items-center'>
+                                <img className='lg:w-full w-fit' src='ModelVerse.png' />
+                                <a href='/' className="flex-shrink-0 text-[#072C81] lg:text-xl font-bold">ModelVerse</a>
+                            </div>
+                            <div className="md:hidden block ml-auto">
+                                {/* Add more elements for desktop */}
+                                <div className='flex'>
+                                    <button class="inline-flex items-center mx-1 shadow-md shadow-gray-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-200 text-[#072C81] rounded lg:text-sm text-[10px] mt-4 md:mt-0">Login
+                                    </button>
+                                    <button class="inline-flex items-center mx-1 bg-[#072C81] text-white border-0 py-1 px-2 text-center  focus:outline-none hover:bg-gray-200 hover:text-[#072C81] rounded lg:text-sm text-[10px] mt-4 md:mt-0">Get your images
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div className="md:block w-full">
                             {/* Add your navigation links here */}

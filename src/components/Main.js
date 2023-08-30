@@ -151,11 +151,11 @@ function Main() {
                     <div className="container  lg:px-0 lg:mt-10 lg:py-10 mt-10 text-opacity-100 mx-auto lg:w-[75%]">
 
                         <div className="flex flex-col text-center w-full lg:mb-10 mb-5 ">
-                            <h1 className="lg:w-[60%] mx-auto lg:text-4xl text-lg font-bold title-font lg:mb-2 text-[#072C81]">Professional Model Catalogs, </h1>
-                            <span className='lg:w-[70%] mx-auto lg:text-4xl text-lg font-bold title-font text-[#072C81]'>without physical studio photoshoot</span>
-                            <p className="lg:w-2/3 mx-auto leading-relaxed lg:my-5 my-3 font-semibold text-black lg:text-lg text-sm">No.1 Professional AI Model Catalog Generator</p>
-                            <p className="lg:w-[40%] mx-auto leading-relaxed text-xs">Get on-model images of your garments in minutes with our AI-</p>
-                            <p className="lg:w-[45%] mx-auto leading-relaxed text-xs">photographer. Upload photos, pick style & receive 100+ On-Model Images</p>
+                            <h1 className="lg:w-[60%] mx-auto lg:text-4xl text-base font-bold title-font lg:mb-2 lg:mt-0 mt-3 text-[#072C81]">Professional Model Catalogs, </h1>
+                            <span className='lg:w-[70%] mx-auto lg:text-4xl text-base font-bold title-font text-[#072C81]'>without physical studio photoshoot</span>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed lg:my-5 my-5 font-semibold text-black lg:text-lg text-xs">No.1 Professional AI Model Catalog Generator</p>
+                            <p className="lg:w-[40%] mx-auto leading-relaxed lg:font-medium font-medium lg:text-xs text-[10px]">Get on-model images of your garments in minutes with our AI-</p>
+                            <p className="lg:w-[45%] mx-auto leading-relaxed lg:font-medium font-medium lg:text-xs text-[10px]">photographer. Upload photos, pick style & receive 100+ On-Model Images</p>
                         </div>
 
                         <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
@@ -256,14 +256,14 @@ function Main() {
                         </div>
 
                         <div className="xl:w-1/3 lg:w-1/2 md:w-full w-[90%] mx-auto lg:px-8 py-6 lg:border-l-2 border-[#5B85EF] border-opacity-60">
-                            <h1 className="text-5xl text-black leading-none flex items-center  mb-4 ">
-                                <span className='text-[#001D66] text-right'>$19</span>
-                                <span className="lg:text-base text-sm ml-auto font-normal text-black">starting at per catalog</span>
+                            <h1 className="text-5xl text-black leading-none mx-auto flex items-center  mb-4 ">
+                                <span className='text-[#001D66] lg:text-left lg:mx-0 mx-auto'>$19</span>
+                                <span className="lg:text-base text-sm lg:ml-auto lg:mx-0 mx-auto font-normal text-black">starting at per catalog</span>
                             </h1>
-                            <h1 className="text-5xl text-gray-900 leading-none flex items-center mb-4 ">
-                                <span className='text-[#001D66]'>3</span>
-                                <span className='text-[#001D66] text-lg'>hrs</span>
-                                <span className="lg:text-base text-sm ml-auto font-normal text-black">fastest turn around</span>
+                            <h1 className="text-5xl text-gray-900 leading-none  flex items-center mb-4 ">
+                                <span className='text-[#001D66] lg:text-right lg:ml-0 ml-auto'>3</span>
+                                <span className='text-[#001D66] text-lg lg:mr-0 mr-auto'>hrs</span>
+                                <span className="lg:text-base text-sm lg:ml-auto lg:mx-0 mx-auto font-normal text-black">fastest turn around</span>
                             </h1>
                         </div>
 
@@ -398,7 +398,7 @@ function Main() {
 
                     <div className="flex flex-wrap lg:px-20 px-5">
                         <h2 className="lg:text-3xl text-base font-semibold text-left lg:my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
-                        <h1 className="text-[#18347B] lg:text-4xl text-xl text-left my-5 title-font font-bold mb-4">The quickest and simplest way to get a professional model Photoshoot </h1>
+                        <h1 className="text-[#18347B] lg:text-4xl text-xl text-left my-5 title-font font-bold lg:mb-4 mb-0">The quickest and simplest way to get a professional model Photoshoot </h1>
 
 
                         <div className='my-5 lg:w-1/2 w-full'>
@@ -479,10 +479,10 @@ function Main() {
 
             {/* Location  */}
             <section id='nearme' className="body-font overflow-hidden">
-                <div className="container px-5 lg:py-10 py-10 mx-auto">
+                <div className="container lg:px-5 px-0 lg:py-10 py-10 mx-auto">
                     <div className="flex flex-col text-center w-full">
                         <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Location & Backdrop</h2>
-                        <h1 className="lg:w-[70%] mx-auto lg:text-5xl text-2xl font-bold title-font mb-5 text-[#3F3503]">
+                        <h1 className="lg:w-[70%] mx-auto lg:text-5xl text-[23px] font-bold title-font mb-5 text-[#3F3503]">
                             Choose from a wide range of locations and studio backdrop</h1>
 
                     </div>
@@ -512,12 +512,12 @@ function Main() {
 
             {/* Pricing */}
             <section id='pricing' className="bg-[#efeded] body-font overflow-hidden">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-20">
+                <div className="container lg:px-5 px-0 py-24 mx-auto">
+                    <div className="flex flex-col text-center w-full lg:mb-20 mb-10">
                         <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Pricing</h2>
-                        <h1 className="lg:w-[70%] mx-auto lg:text-5xl text-2xl font-bold title-font mb-5 text-[#3F3503]">
+                        <h1 className="lg:w-[60%] mx-auto lg:text-5xl text-[23px] font-bold title-font mb-5 text-[#3F3503]">
                             Model Catalog Photo Shoot for 50x cheaper than Physical shoot</h1>
-                        <p className="lg:w-[50%] mx-auto leading-relaxed lg:text-base text-sm text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
+                        <p className="lg:w-[50%] mx-auto leading-relaxed lg:text-base text-[11px] lg:px-10 px-2 text-black">Our affordable pricing makes it possible for small and large businesses to get high-quality professional on-model images  for their garments</p>
 
                     </div>
 

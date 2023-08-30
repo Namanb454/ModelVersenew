@@ -303,7 +303,7 @@ function Main() {
 
             {/* 11,112 AI Models already generated */}
             {/* for 66+ happy customers! */}
-            <section className=" body-font mt-10">
+            <section id='styles' className=" body-font mt-10">
                 <div className="container px-5 mx-auto">
                     <div className="flex flex-col text-center w-full mb-0">
                         <h1 className="lg:w-[70%] mx-auto sm:text-5xl text-lg font-bold title-font mb-4 text-gray-900"><span className='text-[#21B8B9]'>11,112</span> AI Models already generated for <span className='text-[#AD9307]'> 66+ </span> happy customers!</h1>
@@ -393,7 +393,7 @@ function Main() {
 
 
             {/* How it works? */}
-            <section className=" body-font bg-[#efeded] my-10 overflow-hidden">
+            <section id='howitworks' className=" body-font bg-[#efeded] my-10 overflow-hidden">
                 <div className="container lg:py-10 py-5 mx-auto">
 
                     <div className="flex flex-wrap lg:px-20 px-5">
@@ -478,7 +478,7 @@ function Main() {
 
 
             {/* Location  */}
-            <section className="body-font overflow-hidden">
+            <section id='nearme' className="body-font overflow-hidden">
                 <div className="container px-5 lg:py-10 py-10 mx-auto">
                     <div className="flex flex-col text-center w-full">
                         <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Location & Backdrop</h2>
@@ -511,7 +511,7 @@ function Main() {
 
 
             {/* Pricing */}
-            <section className="bg-[#efeded] body-font overflow-hidden">
+            <section id='pricing' className="bg-[#efeded] body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h2 className="lg:text-3xl text-xl font-semibold title-font lg:mb-10 mb-5 text-[#2F1F94]">Pricing</h2>
@@ -881,8 +881,8 @@ const ResponsiveImagebghwt1 = {
 }
 
 const Image1bghwt1 = {
-    width: '20vw',
-    height: '50vh',
+    width: '10vw',
+    height: '35vh',
     padding: '0 '
 }
 
@@ -973,8 +973,8 @@ const ResponsiveImagebghwt2 = {
 }
 
 const Image1bghwt2 = {
-    width: '20vw',
-    height: '50vh',
+    width: '10vw',
+    height: '35vh',
     padding: '0'
 }
 

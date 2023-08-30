@@ -17,12 +17,12 @@ const Navbar = () => {
                         <div className="hidden md:block w-full">
                             {/* Add your navigation links here */}
                             <nav class="w-fit mx-auto items-center text-base justify-center">
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">Reviews and examples</a>
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">How it works?</a>
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">Styles</a>
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">Pricing</a>
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">Near me</a>
-                                <a href='/' class="mx-8 text-sm hover:text-gray-900">Blog</a>
+                                <a href='#reviews' class="mx-8 text-sm hover:text-gray-900">Reviews and examples</a>
+                                <a href='#howitworks' class="mx-8 text-sm hover:text-gray-900">How it works?</a>
+                                <a href='#styles' class="mx-8 text-sm hover:text-gray-900">Styles</a>
+                                <a href='#pricing' class="mx-8 text-sm hover:text-gray-900">Pricing</a>
+                                <a href='#nearme' class="mx-8 text-sm hover:text-gray-900">Near me</a>
+                                <a href='#blog' class="mx-8 text-sm hover:text-gray-900">Blog</a>
                             </nav>
                         </div>
                     </div>

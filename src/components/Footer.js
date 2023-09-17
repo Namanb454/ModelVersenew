@@ -7,15 +7,15 @@ function Footer() {
                 <div className="container lg:px-10 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="lg:w-64 w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <a href='/' className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                            <span className="lg:text-3xl text-2xl text-black font-bold">Model Verse</span>
+                            <span className="lg:text-3xl text-2xl text-black font-bold tracking-wider">Model Verse</span>
                         </a>
-                        <p className="mt-2 lg:text-sm text-black text-xs text-center lg:text-justify">Professional Model Catalogs, without physical studio Photoshoot</p>
-                        <p className="mt-2 lg:text-sm text-black text-xs text-center lg:text-justify">© Copyright 2023 All Rights Reserved by Jumbla Creations PTE LTD.</p>
+                        <p className="mt-2 mx-2 lg:text-sm text-black text-xs text-center lg:text-justify">Professional Model Catalogs, without physical studio Photoshoot</p>
+                        <p className="mt-2 mx-2 lg:text-sm text-black text-xs text-center lg:text-justify">© Copyright 2023 All Rights Reserved by Jumbla Creations PTE LTD.</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:px-24 -mb-10 lg:py-0 py-5 md:mt-0 mt-0 md:text-left text-center">
-                        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+                        <div className="lg:w-1/3 md:w-1/2 w-1/2 px-4">
 
-                            <nav className="list-none lg:my-14 my-2">
+                            <nav className="list-none lg:my-14 my-2 tracking-wider">
                                 <li className='lg:my-5 my-2'>
                                     <a className="text-black lg:text-base text-sm hover:text-gray-800">Refund</a>
                                 </li>
@@ -27,9 +27,9 @@ function Footer() {
                                 </li>
                             </nav>
                         </div>
-                        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+                        <div className="lg:w-1/3 md:w-1/2 w-1/2 px-4">
 
-                            <nav className="list-none lg:my-14 my-2">
+                            <nav className="list-none lg:my-14 my-2 tracking-wider">
                                 <li className='lg:my-5 my-2'>
                                     <a className="text-black lg:text-base text-sm hover:text-gray-800">FAQ’s</a>
                                 </li>

@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <nav className="">
-            <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-2 shadow-gray-300 shadow-md">
+            <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-2 shadow-gray-300 shadow-md tracking-wider">
                 <div className="lg:flex items-center justify-between h-[8vh]">
                     <div className="lg:flex items-center lg:w-full w-fit mx-auto">
                         <div className='flex'>

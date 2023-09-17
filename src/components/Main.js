@@ -120,7 +120,7 @@ function Main() {
 
 
     return (
-        <div>
+        <div className='tracking-wide'>
             <div>
 
                 <div className=' w-full naman'>
@@ -358,7 +358,7 @@ function Main() {
                 <div className="container px-5 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {imagecarousel.map((item) => (
-                            <div className="lg:w-[11%] md:w-1/6 md:p-3 w-1/4 lg:p-4 p-2 mx-auto">
+                            <div className="lg:w-[11%] md:w-1/6 md:p-3 w-1/3 lg:p-4 p-2 mx-auto">
                                 <div className="block relative lg:h-[30vh] h-full rounded overflow-hidden">
                                     <img alt="models" className="object-center lg:w-[30vw] lg:h-[25vh] h-[100%] block" src={item.img} />
                                 </div>
@@ -495,7 +495,7 @@ function Main() {
                                     return (
                                         <div className="xl:w-1/5 w-1/2 md:w-1/2 p-">
                                             <div className="lg:p-6 p-3 mx-auto rounded-lg">
-                                                <img className="lg:h-[45vh] h-[25vh] rounded w-full object-cover object-center mb-" src={data.img} alt="content" />
+                                                <img className="lg:h-[45vh] h-full rounded w-full object-cover object-center mb-" src={data.img} alt="content" />
 
                                             </div>
                                         </div>
@@ -539,7 +539,7 @@ function Main() {
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
                                         <MdArrowForward />
                                     </span>
-                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                    <span className='font-bold'>2&nbsp;</span>hour processing time
                                 </p>
 
                                 <button className="flex items-center mt-auto text-black border-2 border-[#6A0202] hover:text-white hover:bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
@@ -568,7 +568,7 @@ function Main() {
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
                                         <MdArrowForward />
                                     </span>
-                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                    <span className='font-bold'>2&nbsp;</span>hour processing time
                                 </p>
 
                                 <button className="flex items-center mt-auto border-2 border-[#6A0202] text-white bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
@@ -597,7 +597,7 @@ function Main() {
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-black font-bold rounded-full flex-shrink-0">
                                         <MdArrowForward />
                                     </span>
-                                    <span className='font-bold'>2&nbsp;</span>hour down time
+                                    <span className='font-bold'>2&nbsp;</span>hour processing time
                                 </p>
 
                                 <button className="flex items-center mt-auto text-black border-2 border-[#6A0202] hover:text-white hover:bg-[#6A0202] py-2 px-4 w-full focus:outline-none rounded">Get your models
@@ -654,7 +654,7 @@ function Main() {
 
 
             {/* Poster  */}
-            <section className=" body-font bg-[#537FEF] lg:mx-20 rounded-3xl">
+            <section className=" body-font bg-[#537FEF] lg:mx-20 h-full rounded-3xl">
                 <div className="container mx-auto flex lg:px-20 lg:my-24 my-10 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 className="title-font lg:text-6xl text-3xl lg:my-5 lg:px-0 px-10 my-10 mb-4 font-bold text-white">Get Your Models</h1>

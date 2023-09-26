@@ -397,8 +397,16 @@ function Main() {
                 <div className="container lg:py-10 py-5 mx-auto">
 
                     <div className="flex flex-wrap lg:px-20 px-5">
-                        <h2 className="lg:text-3xl text-base font-semibold text-left lg:my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
+                        <div className='w-full'>
+                            <h2 className="lg:text-3xl text-base font-semibold text-left lg:my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
+
+                            <div className='lg:w-[60%] lg:h-[60vh]'>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9SoABL2mQtw?si=t53VLUHL0EqC6E4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                         <h1 className="text-[#18347B] lg:text-4xl text-xl text-left my-5 title-font font-bold lg:mb-4 mb-0">The quickest and simplest way to get a professional model Photoshoot </h1>
+
 
 
                         <div className='my-5 lg:w-1/2 w-full'>

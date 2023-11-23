@@ -401,7 +401,8 @@ function Main() {
                             <h2 className="lg:text-3xl text-base font-semibold text-left lg:my-5 title-font text-[#21B8B9] tracking-widest">How it works?</h2>
 
                             <div className='lg:w-[60%] lg:h-[60vh]'>
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9SoABL2mQtw?si=t53VLUHL0EqC6E4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LZbA45ZZE-c?si=JwIvDPVIisDFScBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
 

@@ -13,8 +13,8 @@ const Navbar = () => {
                 <div className="lg:flex items-center justify-between h-[8vh]">
                     <div className="lg:flex items-center lg:w-full w-fit mx-auto">
                         <div className='flex'>
-                            <div className='flex w-fit lg:mt-0 mt-3 items-center'>
-                                <img className='lg:w-full w-fit' src='ModelVerse.png' />
+                            <div className='flex w-11 lg:mt-0 mt-3 items-center'>
+                                <img className='lg:w-fit w-fit rounded-full' src='logo2.1.jpg' />
                                 <a href='/' className="flex-shrink-0 text-[#072C81] lg:text-xl font-bold">ModelVerse</a>
                             </div>
                             <div className="md:hidden block ml-auto">
